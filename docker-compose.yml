@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.autoscikitlearn
+    user: jovyan
     volumes:
       - ./:/app
     working_dir: /app
@@ -15,6 +16,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.tpot
+    user: jovyan
     volumes:
       - ./:/app
     working_dir: /app
