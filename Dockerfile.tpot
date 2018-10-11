@@ -1,0 +1,7 @@
+FROM debian
+RUN apt-get update
+RUN apt-get install -y  python3 python3-pip ipython3
+RUN pip3 install numpy scipy scikit-learn pandas deap update_checker tqdm stopit
+RUN pip3 install tpot
+RUN pip3 install jupyter
+RUN pip3 install prompt-toolkit==1.0.15
